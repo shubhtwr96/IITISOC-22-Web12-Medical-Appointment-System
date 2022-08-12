@@ -9,17 +9,18 @@ Patients can book their appointment by simply filling out details where they wil
 
 # Tech Stacks
 **Frontend**- HTML, CSS, Bootstrap, JavaScript  
-**Backend**- NodeJS, MongoDB, ExpressJS, PassportJS
+**Backend**- NodeJS, MongoDB, ExpressJS, PassportJS  
+
 GoogleAUTH used for google signin.
 
 
 # Developed By
-Aditi Patil
-Ayushi Agrawal
-Monil Pitliya
+Aditi Patil  
+Ayushi Agrawal  
+Monil Pitliya  
 Shubhneet Tiwari
 
 # Mentor
 Neha
 
-\
+
