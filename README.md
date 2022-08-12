@@ -7,6 +7,14 @@ Patients can book their appointment by simply filling out details where they wil
 
 # To Run Locally 
 
+1. Clone the project  
+2. In the project directory</br> To install dependencies</br> 
+ > npm install </br> 
+
+To start the development server</br>
+
+ > npm start
+
 # Tech Stacks
 **Frontend**- HTML, CSS, Bootstrap, JavaScript  
 **Backend**- NodeJS, MongoDB, ExpressJS, PassportJS  
