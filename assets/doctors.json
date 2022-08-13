@@ -1,0 +1,268 @@
+[
+  {
+    "_id": {
+      "$oid": "62ea602a381441242cca3716"
+    },
+    "name": "Dr. Kartik Jain",
+    "specialization": "Dentist",
+    "hospital": "Suyash hospital",
+    "experience": "4 years",
+    "timings": {
+      "from": "15:00:00",
+      "to": "18:00:00"
+    }
+  },
+{
+  "_id": {
+    "$oid": "62ea718c3a6375e6cd750919"
+  },
+  "name": "Dr. Aman Verma",
+  "specialization": "Dentist",
+  "hospital": "Bombay hospital",
+  "experience": "10 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea722e3a6375e6cd75091a"
+  },
+  "name": "Dr. Sonal Pandey",
+  "specialization": "Dentist",
+  "hospital": "Apollo hospital",
+  "experience": "3 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea72953a6375e6cd75091b"
+  },
+  "name": "Dr. Rahul Gupta",
+  "specialization": "Cardiologist",
+  "hospital": "Apollo hospital",
+  "experience": "8 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea73173a6375e6cd75091c"
+  },
+  "name": "Dr. Anshuman Soni",
+  "specialization": "Cardiologist",
+  "hospital": "Synergy hospital",
+  "experience": "15 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+
+},{
+  "_id": {
+    "$oid": "62ea73963a6375e6cd75091d"
+  },
+  "name": "Dr. Ritu Das",
+  "specialization": "Cardiologist",
+  "hospital": "CHL hospital",
+  "experience": "7 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea7a263a6375e6cd75091e"
+  },
+  "name": "Dr. Akshat Patel",
+  "specialization": "gynaecologist",
+  "hospital": "CHL hospital",
+  "experience": "5 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea7abc3a6375e6cd75091f"
+  },
+  "name": "Dr. Rohan Joshi",
+  "specialization": "gynaecologist",
+  "hospital": "Bombay hospital",
+  "experience": "7 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea7af53a6375e6cd750920"
+  },
+  "name": "Dr. Aaisha Khan",
+  "specialization": "gynaecologist",
+  "hospital": "Apollo hospital",
+  "experience": "3 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea7b3e3a6375e6cd750921"
+  },
+  "name": "Dr. Ishaan Bhatt",
+  "specialization": "neurologist",
+  "hospital": "Synergy hospital",
+  "experience": "10 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea7c193a6375e6cd750922"
+  },
+  "name": "Dr. Rashi Singh",
+  "specialization": "neurologist",
+  "hospital": "CHL hospital",
+  "experience": "8 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea7c723a6375e6cd750923"
+  },
+  "name": "Dr. Harsh Rao",
+  "specialization": "neurologist",
+  "hospital": "Apollo hospital",
+  "experience": "3 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea7cbe3a6375e6cd750924"
+  },
+  "name": "Dr. Adarsh Rajput",
+  "specialization": "neurologist",
+  "hospital": "Suyash hospital",
+  "experience": "2 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea7cfe3a6375e6cd750925"
+  },
+  "name": "Dr. Devansh Maheshwari",
+  "specialization": "urologist",
+  "hospital": "CHL hospital",
+  "experience": "14 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea7dc93a6375e6cd750926"
+  },
+  "name": "Dr. Mehul Gupta",
+  "specialization": "urologist",
+  "hospital": "Synergy hospital",
+  "experience": "11 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea7e1f3a6375e6cd750927"
+  },
+  "name": "Dr. Tanishka Malviya",
+  "specialization": "urologist",
+  "hospital": "CHL hospital",
+  "experience": "5 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea7ec03a6375e6cd750929"
+  },
+  "name": "Dr. Namit Khatri",
+  "specialization": "Physician",
+  "hospital": "CHL hospital",
+  "experience": "7 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea7f3c3a6375e6cd75092a"
+  },
+  "name": "Dr. Sandeep Agrawal",
+  "specialization": "Physician",
+  "hospital": "Apollo hospital",
+  "experience": "19 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea7f913a6375e6cd75092b"
+  },
+  "name": "Dr. Khushi Patil",
+  "specialization": "Physician",
+  "hospital": "Bombay hospital",
+  "experience": "9 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea7fd43a6375e6cd75092c"
+  },
+  "name": "Dr. Sunil Jha",
+  "specialization": "Pediatrician",
+  "hospital": "Suyash hospital",
+  "experience": "16 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea80473a6375e6cd75092d"
+  },
+  "name": "Dr. Vikas Jain",
+  "specialization": "Pediatrician",
+  "hospital": "CHL hospital",
+  "experience": "4 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+},{
+  "_id": {
+    "$oid": "62ea809d3a6375e6cd75092e"
+  },
+  "name": "Dr. Gargi Tomar",
+  "specialization": "Pediatrician",
+  "hospital": "Bombay hospital",
+  "experience": "9 years",
+  "timings": {
+    "from" : "15:00:00",
+    "to" : "18:00:00"
+  }
+}]

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="iconfilter.js"></script>
+    <title>Medical Appointment System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+
+
+        .show {
+            display: block;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        h1 {
+            color: green;
+        }
+
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            appearance: none;
+            outline: 0;
+            background: green;
+            background-image: none;
+            border: 1px solid black;
+        }
+
+        .select {
+            position: relative;
+            display: block;
+            width: 20em;
+            height: 3em;
+            line-height: 3;
+            background: #2C3E50;
+            overflow: hidden;
+            border-radius: .25em;
+        }
+
+        select {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0 0 0 .5em;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        select::-ms-expand {
+            display: none;
+        }
+
+        .select::after {
+            content: '\25BC';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0 1em;
+            background: #34495E;
+            pointer-events: none;
+        }
+
+
+        .select:hover::after {
+            color: #F39C12;
+        }
+
+        .select::after {
+            -webkit-transition: .25s all ease;
+            -o-transition: .25s all ease;
+            transition: .25s all ease;
+        }
+
+        input[type=submit] {
+            background-color: #f35912;
+            border: #2C3E50;
+            color: #fff;
+            padding: 16px 32px;
+            margin: 4px 2px;
+            text-decoration: solid;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+<header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                 stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-300 rounded-full"
+                 viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">MEDI 24X7</span>
+        </a>
+        <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-green-400" href="index.html">HOME</a>
+            <a class="mr-5 hover:text-green-400" href="Contact.html">CONTACT US</a>
+
+            <a class="mr-5 hover:text-green-400" href="blogs.html">BLOGS</a>
+        </nav>
+        <button class="inline-flex items-center bg-green-300 border-0 py-1 px-3 focus:outline-none hover:bg-green-400 rounded text-base mt-4 md:mt-0">
+            Logged in
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                 class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+        </button>
+    </div>
+</header>
+<hr>
+
+<section class="text-gray-600 body-font  bg-gray-900">
+
+
+    <div class="container mx-auto flex  md:flex-row flex-col items-right-top ">
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <img class="object-cover object-center rounded " alt="hero"
+                 src="https://thumbs.dreamstime.com/b/abstract-health-medical-science-healthcare-icon-digital-technology-doctor-concept-modern-innovation-treatment-medicine-hi-tech-174951032.jpg">
+        </div>
+
+        <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <h1 class="title-font sm:text-5xl text-5xl mb-4 lg\:font-medium text-gray-900">View Doctors,
+                <br class="hidden lg:inline-block">Book An Appointment
+            </h1>
+
+            <div class="flex justify-center">
+
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+<br>
+
+
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=13Angk8PQ6OAUOwt2BHWImTdeiHlyTw4&ehbc=2E312F" width="100%"
+        height="480"></iframe>
+
+
+<!DOCTYPE html>
+
+
+<section>
+
+    <form>
+        <center>
+            <h1><b>SELECT HOSPITAL</b></h1>
+            <div class="select">
+                <select name="slct" id="slct">
+                    <option>--Select Hospital--</option>
+                    <option value="1">Apollo Hospital</option>
+                    <option value="2">Suyash Hospital</option>
+                    <option value="3">Bombay Hospital</option>
+                    <option value="4">CARE CHL Hospital</option>
+                    <option value="5">Medanta Hospital</option>
+                </select>
+            </div>
+            <br>
+            <input type="submit" value="CONFIRM">
+
+        </center>
+    </form>
+
+</section>
+
+<hr>
+
+<!--icon button-->
+<section>
+    <div id="buttons">
+        <div class="flex flex-col text-center w-full">
+            <h1 class="title sm:text-3xl text-3xl mb-4 font-medium text-center text-gray-900">Clinic and
+                Specialities</h1>
+            <p class="sub-title sm:text-1xl text-2xl mb-4 font-medium text-center text-gray-900">Find experienced
+                doctors across all specialties</p>
+        </div>
+        <div class="container px-5 py-10 mx-auto ">
+            <div class="flex container px-5 py-10 inline-flex content-center gap-x-32 ">
+                <button class="btn" onclick="filterObjects('all')" id="getAll">
+                    <img class="object-center rounded w-24 h-24 rounded-full " src="img/urology.png">
+                    <p class="text-black-900">ALL</p>
+                </button>
+                <button class="btn" onclick="filterObjects('Neurologist')">
+                    <img class="object-center rounded w-24 h-24 rounded-full" src="img/neurology.jpg">
+                    <p class="text-black-900">Neurologist</p>
+                </button>
+                <button class="btn" onclick="filterObjects('Cardiologist')">
+                    <img class="object-center rounded w-24 h-24 rounded-full" src="img/Cardiolgy.jpg">
+                    <p class="text-black-900">Cardiologist</p>
+                </button>
+                <button class="btn" onclick="filterObjects('Dentist')">
+                    <img class="object-center rounded w-24 h-24 rounded-full " src="img/Dentist.jpg">
+                    <p class="text-black-900">Dentist</p>
+                </button>
+                <button class="btn" onclick="filterObjects('Gynaecologist')">
+                    <img class="object-center rounded w-24 h-24 rounded-full" src="img/stethoscope.png">
+                    <p class="text-black-900">Gynaecologist</p>
+                </button>
+                <button class="btn" onclick="filterObjects('Urologist')">
+                    <img class="object-center rounded w-24 h-24 rounded-full" src="img/urology.png">
+                    <p class="text-black-900">Urology</p>
+                </button>
+                <button class="btn" onclick="filterObjects('Pediatrician')">
+                    <img class="object-center rounded w-24 h-24 rounded-full" src="img/pediatrician .jpg">
+                    <p class="text-black-900">Pediatrician</p>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+
+
+<!--doctor's list-->
+<section class="text-gray-600 body-font bg-green-50">
+    <div class="objects">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap m-4">
+            <% for(let i = 0; i < doctors.length; i++)  { %>
+                <div class="doctor <%- doctors[i].specialization %> lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                             src="https://thumbs.dreamstime.com/b/doctor-icon-vector-stethoscope-medical-consultation-physician-profile-symbol-male-avatar-glyph-pictogram-doctor-icon-104463219.jpg"/>
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><%= doctors[i].specialization %></h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium"><%= doctors[i].name %></h2>
+                        <p class="mt-1"><%= doctors[i].hospital %></p>
+                        <p class="mt-1"><%= doctors[i].experience; %></p>
+                        <a href="/appointments/<%= doctors[i]._id%>" class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" >BOOK</a>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+    </div>
+    </div>
+</section>
+<hr>
+<!--footer-->
+<footer class="text-gray-600 body-font ">
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                     stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-400 rounded-full"
+                     viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">MEDICO 24/7</span>
+            </a>
+            <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+        </div>
+        <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                <nav class="list-none mb-10">
+                    <li>
+                        <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                    </li>
+                </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                <nav class="list-none mb-10">
+                    <li>
+                        <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                    </li>
+                </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                <nav class="list-none mb-10">
+                    <li>
+                        <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                    </li>
+                </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                <nav class="list-none mb-10">
+                    <li>
+                        <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                    </li>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-100">
+        <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Tailblocks —
+                <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1"
+                   target="_blank">@knyttneve</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                          <a class="text-gray-500">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                 class="w-5 h-5" viewBox="0 0 24 24">
+                              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                          </a>
+                          <a class="ml-3 text-gray-500">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                 class="w-5 h-5" viewBox="0 0 24 24">
+                              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                            </svg>
+                          </a>
+                          <a class="ml-3 text-gray-500">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                 stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                            </svg>
+                          </a>
+                          <a class="ml-3 text-gray-500">
+                            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                 stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                              <path stroke="none"
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                            </svg>
+                          </a>
+                        </span>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
